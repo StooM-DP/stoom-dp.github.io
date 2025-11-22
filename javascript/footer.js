@@ -20,7 +20,7 @@ function loadFooter() {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 StooM.</p>
+            <p>&copy; 2025 <a href="https://github.com/StooM-DP/">StooM</a>.</p>
         </div>
     </footer>
     `;
@@ -31,7 +31,6 @@ function loadFooter() {
     }
 }
 
-// Charger le footer quand le DOM est prêt
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadFooter);
 } else {
