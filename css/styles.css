@@ -160,7 +160,7 @@ main {
 .hero {
     text-align: center;
     padding: 5rem 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/pictures/personal-library.webp');
+/*     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/pictures/personal-library.webp'); */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
