@@ -4,7 +4,7 @@ function loadFooter() {
         <div class="footer-content">
             <div class="footer-section">
                 <h3>StooM</h3>
-                <p>Your app to play easily to DooM.</p>
+                <p>Your app to play DooM wads easily.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
