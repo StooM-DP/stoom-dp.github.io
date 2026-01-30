@@ -20,7 +20,7 @@ function loadFooter() {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 <a href="https://github.com/StooM-DP/">StooM</a>.</p>
+            <p>&copy; 2026 <a href="https://github.com/StooM-DP/">StooM</a>.</p>
         </div>
     </footer>
     `;
