@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StooM - Development Versions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/icon.png" alt="StooM Logo">
+                <span>StooM</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="development.html" class="active">Development</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Development Versions</h1>
+            <p>Get the latest development builds and test new features before they're released.</p>
+        </section>
+
+        <section class="development-info">
+            <div class="version-display">
+                <span class="version-badge">Alpha 2</span>
+                <span class="branch-info">master branch</span>
+            </div>
+        </section>
+
+        <section class="downloads-section">
+            <h2>Download Development Build</h2>
+            <div class="download-buttons">
+                <div class="download-card">
+                    <a href="#" class="btn primary download-btn" data-platform="linux">
+                        <span class="platform-text">Download for Linux</span>
+                    </a>
+                    <span class="availability available">Available</span>
+                </div>
+                <div class="download-card">
+                    <a href="#" class="btn primary download-btn disabled" data-platform="windows">
+                        <span class="platform-text">Download for Windows</span>
+                    </a>
+                    <span class="availability unavailable">Not Available</span>
+                </div>
+            </div>
+            <p class="download-note">
+                Development builds may contain bugs and unstable features. 
+                Please report any issues you encounter.
+            </p>
+        </section>
+
+        <section class="whats-new">
+            <h2>What's New since the Alpha 1</h2>
+            <div class="changes-list">
+                <div class="change-item">
+                    <h3>Recent Changes</h3>
+                    <ul>
+                        <li>Reload downloaded wads when we download a new one</li>
+                        <li>Code refactor</li>
+                        <li>Add wad feature</li>
+                        <li>Safer files naming system</li>
+                        <li>Unzip downloaded wads in cache for the engines who need it</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="javascript/footer.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
