@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host a Game - StooM Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    
+    <meta property="og:title" content="StooM: Host a Game">
+    <meta property="og:description" content="Learn how to host a multiplayer game with StooM.">
+    <meta property="og:image" content="https://stoom-dp.github.io/Website/assets/icon.png">
+    <meta property="og:url" content="https://stoom-dp.github.io/Website/docs/host-game">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="StooM">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/icon.png" alt="StooM Logo">
+                <span>StooM</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../downloads">Downloads</a></li>
+                <li><a href="/docs" class="active">Docs</a></li>
+                <li><a href="https://github.com/StooM-DP/" target="_blank">GitHub</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="docs-content">
+        <aside class="docs-sidebar">
+            <h3>Topics</h3>
+            <ul>
+                <li><a href="/docs" class="back-link">← All Topics</a></li>
+                <li><a href="host-game" class="active">Host a Game</a></li>
+            </ul>
+        </aside>
+
+        <article class="docs-article">
+            <h1>Host a Game</h1>
+            <p class="docs-intro">Follow these steps to host a multiplayer game and play with your friends.</p>
+
+            <div class="step">
+                <h3>Step 1: Open the Multiplayer Tab</h3>
+                <p>First, navigate to the <strong>Multiplayer</strong> tab in the StooM application.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Click "Host the Game"</h3>
+                <p>Click on the <strong>"Host the Game"</strong> button to start the hosting setup.</p>
+                <img src="../assets/pictures/docs/host-game/host-step-1.png" alt="Host the Game button" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Select IWAD and Source Port</h3>
+                <p>You will enter a setup wizard with a total of 6 pages. On the first page, select your <strong>IWAD</strong> and <strong>Source Port</strong>.</p>
+                <p>Note: Source ports and IWADs you do not own will not be displayed in the lists. Multiplayer supports three source ports: <strong>ZDoom</strong>, <strong>UZDoom</strong>, and <strong>GZDoom</strong>.</p>
+                <img src="../assets/pictures/docs/host-game/host-step-2.png" alt="Select IWAD and Source Port" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 4: Add PWADs and Mods</h3>
+                <p>On this screen, you can add PWADs as well as mods. Depending on the source port and IWAD selected previously, you may also be able to select a profile.</p>
+                <img src="../assets/pictures/docs/host-game/host-step-3.png" alt="Add PWADs and Mods" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 5: Choose Game Mode</h3>
+                <p>On this screen, select the <strong>Game Mode</strong> (Cooperative or Deathmatch). You can also select the difficulty, and choose to remove all monsters.</p>
+                <img src="../assets/pictures/docs/host-game/host-step-4.png" alt="Choose Game Mode" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 6: Configure Network Settings</h3>
+                <p>On this screen, you will configure the most important settings:</p>
+                <ul>
+                    <li><strong>Port:</strong> You can choose between 1,023 and 65,535. If you don't know what this is, leave it at <strong>5,000</strong>, it's a good default choice. :)</li>
+                    <li><strong>Expected Players:</strong> You must count yourself in the total. If you are going to play with 3 friends, enter <strong>4</strong> (You + 3 friends).</li>
+                    <li><strong>Password:</strong> The only requirement is a minimum of 4 characters. However, try to set a strong password.</li>
+                    <li><strong>Online:</strong> You can also decide to play online by checking the corresponding box.</li>
+                </ul>
+                <img src="../assets/pictures/docs/host-game/host-step-5.png" alt="Configure Network Settings" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 7: Review the Summary</h3>
+                <p>On this screen, you will see a complete summary of your game configuration:</p>
+                <ul>
+                    <li>IWAD</li>
+                    <li>Source Port</li>
+                    <li>Number of PWADs</li>
+                    <li>Game Mode</li>
+                    <li>Difficulty</li>
+                    <li>Port</li>
+                    <li>Expected Players</li>
+                    <li>Online status</li>
+                    <li>Password (the number of asterisks is not representative of the password length!)</li>
+                </ul>
+                <img src="../assets/pictures/docs/host-game/host-step-6.png" alt="Review Summary" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 8: Select Files to Send</h3>
+                <p>On this screen, select the files that will be sent to the clients:</p>
+                <p>For example, if you play with a sound pack, your friends may not want to download it :p In that case, uncheck the corresponding box.</p>
+                <div class="warning-box">
+                    <strong>Warning:</strong> If you remove an essential file for the game to function properly (for example, the map file), it will cause problems. The host will use all files, regardless of the selection of files to send.
+                </div>
+                <img src="../assets/pictures/docs/host-game/host-step-7.png" alt="Select Files to Send" class="step-image">
+            </div>
+
+            <div class="step">
+                <h3>Step 9: Wait for Players</h3>
+                <p>The next screen shows the <strong>Coordinator Server</strong> logs, which manages:</p>
+                <ul>
+                    <li>Sending files to clients (mods, PWADs, profiles)</li>
+                    <li>The command it must launch</li>
+                </ul>
+                <p>You can copy the <strong>invitation information</strong> — this contains the IP, port, and password. Be careful who you give this information to, as the IP will be your <strong>public IP</strong>!</p>
+                <p>The Coordinator Server will manage connections and launch the game. StooM takes care of everything! At this stage, you just have to wait for the players to join.</p>
+                <img src="../assets/pictures/docs/host-game/host-step-8.png" alt="Wait for Players" class="step-image">
+            </div>
+        </article>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/main.js"></script>
+</body>
+</html>
