@@ -643,6 +643,50 @@ main {
     color: var(--muted-text);
 }
 
+.development-notice {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 5%;
+}
+
+.notice-box {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(41, 128, 185, 0.1));
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.notice-box h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.notice-box p {
+    color: var(--muted-text);
+    margin: 0;
+}
+
+.notice-box a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.notice-box.warning {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.1), rgba(230, 126, 34, 0.1));
+    border-color: #f39c12;
+}
+
+.notice-box.warning h3 {
+    color: #f39c12;
+}
+
+.notice-box.warning a {
+    color: #f39c12;
+}
+
 .download-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
